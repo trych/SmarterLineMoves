@@ -1,0 +1,58 @@
+[
+
+  { "keys": ["ctrl+super+up"], "command": "smart_swap_line_up" , "context":
+    [
+      { "key": "sls_settings.allow_smart_swap_up", "operator": "equal", "operand": true },
+    ]
+  },
+  { "keys": ["ctrl+super+down"], "command": "smart_swap_line_down" , "context":
+    [
+      { "key": "sls_settings.allow_smart_swap_down", "operator": "equal", "operand": true },
+    ]
+  },
+  { "keys": ["ctrl+super+up"], "command": "swap_line_above", "context":
+    [
+      { "key": "sls_settings.allow_swap_lines_above", "operator": "equal", "operand": true },
+      { "key": "selection_in_first_line", "operator": "equal", "operand": true }
+    ]
+  },
+  { "keys": ["ctrl+super+down"], "command": "swap_line_below", "context":
+    [
+      { "key": "sls_settings.allow_swap_lines_below", "operator": "equal", "operand": true },
+      { "key": "selection_in_last_line", "operator": "equal", "operand": true }
+    ]
+  },
+  { "keys": ["ctrl+super+down"], "command": "unswap_line_above", "context":
+    [
+      { "key": "sls_settings.undo_swap_above", "operator": "equal", "operand": true },
+      { "key": "last_modifying_command", "operator": "equal", "operand" : "swap_line_above" },
+      { "key": "selection_in_first_line", "operator": "equal", "operand": true },
+      { "key": "selection_in_last_line", "operator": "equal", "operand": false }
+    ]
+  },
+  { "keys": ["ctrl+super+down"], "command": "unswap_line_above", "context":
+    [
+      { "key": "sls_settings.undo_swap_above", "operator": "equal", "operand": true },
+      { "key": "last_modifying_command", "operator": "equal", "operand" : "unswap_line_above" },
+      { "key": "selection_in_first_line", "operator": "equal", "operand": true },
+      { "key": "selection_in_last_line", "operator": "equal", "operand": false }
+    ]
+  },
+  { "keys": ["ctrl+super+up"], "command": "unswap_line_below", "context":
+    [
+      { "key": "sls_settings.undo_swap_below", "operator": "equal", "operand": true },
+      { "key": "last_modifying_command", "operator": "equal", "operand" : "swap_line_below" },
+      { "key": "selection_in_last_line", "operator": "equal", "operand": true },
+      { "key": "selection_in_first_line", "operator": "equal", "operand": false }
+    ]
+  },
+  { "keys": ["ctrl+super+up"], "command": "unswap_line_below", "context":
+    [
+      { "key": "sls_settings.undo_swap_below", "operator": "equal", "operand": true },
+      { "key": "last_modifying_command", "operator": "equal", "operand" : "unswap_line_below" },
+      { "key": "selection_in_last_line", "operator": "equal", "operand": true },
+      { "key": "selection_in_first_line", "operator": "equal", "operand": false },
+    ]
+  }
+
+]
