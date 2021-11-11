@@ -23,6 +23,10 @@ The best way to install the package is via Sublime's Package Control. This way t
 
 To install via Package Control, open the Command Palette and select the command `Package Control: Install Package` and search for `SmarterLineSwaps`.
 
+### Manual ###
+
+You can install the package manually by downloading TODO.
+
 
 -------------------------------------------------------------------------------
 
@@ -41,37 +45,45 @@ You can change and selectively disable the package's features by changing its se
 
 You can open the settings file to see the default settings or change them to your custom settings under the `Preferences > Package Settings > SmarterLineSwaps` menu entry. The settings file has the following entries:
 
-### `allow_smart_swap_up`: true/false (Default: true)
+#### `allow_smart_swap_up`: true/false (Default: true)
 
 Turns the smart swapping in the up direction on or off. If it is turned off, Sublime's regular `Swap Line Up` command will be used again.
 
-### `swap_up_clearance`: Number (Default: 5)
+#### `swap_up_clearance`: Number (Default: 5)
 
 How many lines to keep visible between the moving text and the window top when smart swapping up is enabled.
 
-### `allow_smart_swap_down`: true/false (Default: true)
+#### `allow_smart_swap_down`: true/false (Default: true)
 
 Turns the smart swapping in the down direction on or off. If it is turned off, Sublime's regular `Swap Line Down` command will be used again.
 
-### `swap_down_clearance`: Number (Default: 5)
+#### `swap_down_clearance`: Number (Default: 5)
 
 How many lines to keep visible between the moving text and the window bottom when smart swapping down is enabled.
 
-### `allow_swap_lines_above`: true/false (Default: true)
+#### `allow_swap_lines_above`: true/false (Default: true)
 
 Allows the text to move "above" the text buffer once the moving text reaches the top of the file by adding empty lines that the text can be swapped with, so it just keeps moving up when repeating the command.
 
-### `undo_swap_above`: true/false (Default: true)
+#### `undo_swap_above`: true/false (Default: true)
 
 If the selected text has been moved up "above" the text buffer too far, it can be moved back by using the `Swap Line Down` key binding. If this setting is set to true, the empty lines that have been previously added, will be automatically removed again.
 
-### `allow_swap_lines_below`: true/false (Default: true)
+#### `allow_swap_lines_below`: true/false (Default: true)
 
 Allows the text to move "below" the text buffer once the moving text reaches the bottom of the file by adding empty lines that the text can be swapped with, so it just keeps moving down when repeating the command.
 
-### `undo_swap_below`: true/false (Default: true)
+#### `undo_swap_below`: true/false (Default: true)
 
 If the selected text has been moved down "below" the text buffer too far, it can be moved back by using the `Swap Line Up` key binding. If this setting is set to true, the empty lines that have been previously added, will be automatically removed again.
+
+
+-------------------------------------------------------------------------------
+
+
+## Issues and Feedback
+
+If you run into any issues using SmarterLineSwaps or you have an idea for additional features, feel free to [open an issue in the package's issue tracker](https://github.com/trych/SmarterLineSwaps/issues).
 
 
 -------------------------------------------------------------------------------

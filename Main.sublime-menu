@@ -26,7 +26,7 @@
                 "caption": "Documentation",
                 "command": "open_url",
                 "args": {
-                  "url": "https://github.com/trych/TODO"
+                  "url": "https://github.com/trych/SmarterLineSwaps#readme"
                 },
               },
             ]
