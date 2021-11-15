@@ -1,1 +1,23 @@
-TODO
+
+SmarterLineMoves
+================
+
+A Sublime Text package that allows to move your text lines in a smarter way.
+
+Comes with the following features:
+
+* SmartSwap: Always keep a few lines of space between your moving text and the
+  text window's edges.
+* Swap Above/Below: Allows to keep the text moving, even after it hits the top
+  or bottom of the text window.
+* Push Up/Down: text
+* Repel/Attract: TODO
+
+
++ Shortcuts for jump to definition have changed:
+
+  For Mac OS X:
+    * Jump to definition = ``Control+Click``
+    * Jump to definition = ``Control+Command+Alt+Up``
+    * Go back = ``Control+Command+Alt+Left``
+    * Manual CodeIntel = ``Control+Shift+space``

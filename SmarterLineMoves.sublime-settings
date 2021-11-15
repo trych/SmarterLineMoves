@@ -1,0 +1,43 @@
+{
+  // Smart swapping means that there will always be a few lines visible
+  // between the uppermost moving line and the text window's top, or
+  // the bottommost moving line and the text window's bottom, depending
+  // on the direction of movement. This allows to better see where
+  // the lines will end up after swapping.
+
+  // The smart swapping settings change the behavior of Sublime Text's
+  // default line swapping commands (Ctrl+Shift+Up/Down on Windows/Linux
+  // or Ctrl+Cmd+Up/Down on Mac).
+
+  // Turns smart swapping on when swapping lines up.
+  "smart_swap_up": true,
+
+  // Turns smart swapping on when swapping lines up.
+  "smart_swap_down": true,
+
+  // Allowing to swap text "above and below" means that the text
+  // swapping does not stop once it hits the top or bottom of the
+  // window, but that the selected text keeps moving with each further
+  // execution of the swapping command by adding empty lines on the
+  // top/bottom of the selection.
+  //
+  // The corresponding undo commands allow to swap the text back in the
+  // other direction while removing the previously added empty lines.
+  // This is helpful to move text back after it has been moved too
+  // far.
+  "swap_above": true,
+  "undo_swap_above": true,
+
+  "swap_below": true,
+  "undo_swap_below": true,
+
+  // Allows lines that contain only whitespace to be deleted while using
+  // the "Attract Text" command.
+  "squash_whitespace_only_lines": true,
+
+  // How many lines to keep visible when moving lines up.
+  "move_up_clearance": 5,
+
+  // How many lines to keep visible when moving lines down.
+  "move_down_clearance": 5,
+}

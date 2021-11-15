@@ -10,13 +10,13 @@
         "id": "package-settings",
         "children": [
           {
-            "caption": "SmarterLineSwaps",
+            "caption": "SmarterLineMoves",
             "children": [
               {
                 "caption": "Settings",
                 "command": "edit_settings",
                 "args": {
-                  "base_file": "${packages}/SmarterLineSwaps/SmarterLineSwaps.sublime-settings",
+                  "base_file": "${packages}/SmarterLineMoves/SmarterLineMoves.sublime-settings",
                   "default": "{\n\t$0\n}\n"
                 }
 
@@ -26,7 +26,7 @@
                 "caption": "Documentation",
                 "command": "open_url",
                 "args": {
-                  "url": "https://github.com/trych/SmarterLineSwaps#readme"
+                  "url": "https://github.com/trych/SmarterLineMoves#readme"
                 },
               },
             ]
