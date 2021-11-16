@@ -22,13 +22,13 @@ To move text before *and* after the text selection simultaneously, the package a
 
 ## Installation ##
 
-### Package Control ###
+### Via Package Control ###
 
 The best way to install the package is via Sublime's Package Control. This way the package will automatically keep up to date if there are new versions.
 
 To install via Package Control, open the Command Palette and select the command `Package Control: Install Package` and search for `SmarterLineMoves`.
 
-### Manual ###
+### Manually ###
 
 You can install the package manually by [downloading the repo](https://api.github.com/repos/trych/SmarterLineMoves/zipball) and placing it in your Sublime Text `User` Package, which you can find by using `Preferences > Browse Packages...`. Just unzip the file and place it in the `User` folder. This installation method is not recommended, as the package will not automatically be updated.
 

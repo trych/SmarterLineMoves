@@ -210,31 +210,27 @@ class SwapLineCommandEventListener(sublime_plugin.EventListener):
             return ('smart_swap_line_down', {})
 
 
-def get_line_no(view, point):
-  return view.rowcol(point)[0]
-
-
 def shift_view(view, amt):
   current_pos = view.viewport_position()
   view.set_viewport_position((current_pos[0], current_pos[1] + (view.line_height() * amt)), False)
 
 
 def clear_top(view, inverse = False):
-  current_pos = view.viewport_position()
-  first_line_pos = (get_line_no(view, view.sel()[0].begin()) - 1) * view.line_height()
-  min_pos = current_pos[1] + view.line_height() * slm_settings.get('move_up_clearance')
+  first_line_pos = view.text_to_layout(view.sel()[0].begin())[1] - view.viewport_position()[1]
+  min_pos = view.line_height() * slm_settings.get('move_up_clearance')
 
-  if inverse and first_line_pos > min_pos:
+  if inverse and (first_line_pos - view.line_height()) > min_pos:
     shift_view(view, 1)
 
-  if not inverse and (first_line_pos + view.line_height()) < min_pos:
-    shift_view(view, -1)
+  if first_line_pos < min_pos:
+    shift_amt = (min_pos - first_line_pos) // view.line_height() + 1
+    shift_view(view, -shift_amt)
 
 
 def clear_bottom(view):
-  current_pos = view.viewport_position()
-  last_line_pos = (get_line_no(view, view.sel()[-1].end()) + 1) * view.line_height()
-  max_pos = current_pos[1] + view.viewport_extent()[1] - view.line_height() * slm_settings.get('move_down_clearance')
+  last_line_pos = view.text_to_layout(view.sel()[-1].end())[1] - view.viewport_position()[1] + view.line_height()
+  max_pos = view.viewport_extent()[1] - view.line_height() * slm_settings.get('move_down_clearance')
 
   if last_line_pos > max_pos:
-    shift_view(view, 1)
+    shift_amt = (last_line_pos - max_pos) // view.line_height() + 1
+    shift_view(view, shift_amt)
