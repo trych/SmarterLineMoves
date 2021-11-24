@@ -13,9 +13,9 @@ Additionally, Sublime's default swapping would stop at the top or bottom of the 
 
 The package offers the commands `Separate Text Up` and `Separate Text Down` to "separate" the selected text from the text above or below it. This is similar to Sublime Text's default `Insert Line After` and `Insert Line Before` commands, except that the selected text remains selected, so it appears like you move the selected text.
 
-TODO Screencapture
-
 To move text before *and* after the text selection simultaneously, the package adds the commands `Attract Text` and `Repel Text` that add or remove empty lines around the selected text respectively.
+
+![Separate Up/Down & Attract/Repel Text](https://user-images.githubusercontent.com/9803905/143150992-5bf60700-b73f-4d6b-bd55-bff4a563b760.gif)
 
 -------------------------------------------------------------------------------
 
@@ -59,7 +59,7 @@ Use the <kbd>Shift+Ctrl+Alt+Right</kbd> keys on Windows/Linux or <kbd>&#8984;+Ct
 
 The package's features can be changed and/or disabled by changing its settings.
 
-You can open the settings file to see the default settings or change them to your custom settings under the `Preferences > Package Settings > SmarterLineSwaps` menu entry. The settings file has the following entries:
+You can open the settings file to see the default settings or change them to your custom settings under the `Preferences > Package Settings > SmarterLineMoves` menu entry. The settings file has the following entries:
 
 #### `smart_swap_up`: true/false (Default: true)
 
@@ -101,7 +101,7 @@ How many lines to keep visible between the moving text and the window bottom whe
 
 You can change the package's default keyboard shortcuts for the `Separate Text Up/Down` and the `Attract/Repel Text` commands by changing their key bindings.
 
-The key bindings for Windows/Linux are:
+The default key bindings for Windows/Linux are:
 
 ```json
   { "keys": ["ctrl+alt+shift+up"], "command": "separate_text_up" },
@@ -110,7 +110,7 @@ The key bindings for Windows/Linux are:
   { "keys": ["ctrl+alt+shift+left"], "command": "attract_text" },
 ```
 
-The key bindings for macOS are:
+The default key bindings for macOS are:
 
 ```json
   { "keys": ["ctrl+alt+super+up"], "command": "separate_text_up" },
@@ -119,7 +119,7 @@ The key bindings for macOS are:
   { "keys": ["ctrl+alt+super+left"], "command": "attract_text" },
 ```
 
-So if you want to change the keyboard shortcut for the `Attract Text` command to <kbd>Shift+Ctrl+A</kbd>, you can add the following line to your User keybinding map (which you can open via `Preferences > Key Bindings`):
+If you want to change the keyboard shortcut for the `Attract Text` command to <kbd>Shift+Ctrl+A</kbd> for example, you can add the following line to your User keybinding map (which you can open via `Preferences > Key Bindings`):
 
 ```json
   { "keys": ["ctrl+shift+a"], "command": "attract_text" },
@@ -130,7 +130,7 @@ So if you want to change the keyboard shortcut for the `Attract Text` command to
 
 ## Issues and Feedback
 
-If you run into any issues using SmarterLineSwaps or you have an idea for additional features, feel free to [open an issue in the package's issue tracker](https://github.com/trych/SmarterLineSwaps/issues).
+If you run into any issues using SmarterLineMoves or you have an idea for additional features, feel free to [open an issue in the package's issue tracker](https://github.com/trych/SmarterLineMoves/issues).
 
 
 -------------------------------------------------------------------------------
@@ -138,4 +138,4 @@ If you run into any issues using SmarterLineSwaps or you have an idea for additi
 
 ## License
 
-SmarterLineSwaps is licensed under the [MIT License](LICENSE).
+SmarterLineMoves is licensed under the [MIT License](LICENSE).

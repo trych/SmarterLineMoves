@@ -10,14 +10,23 @@ Comes with the following features:
   text window's edges.
 * Swap Above/Below: Allows to keep the text moving, even after it hits the top
   or bottom of the text window.
-* Push Up/Down: text
-* Repel/Attract: TODO
+* Separate Text Up/Down: Adds a command to separate selected text from the
+  neighboring lines above or below it.
+* Attract/Repel Text: Moves neighboring lines towards to or away from the
+  selected text.
 
++ Shortcuts:
 
-+ Shortcuts for jump to definition have changed:
+  For Windows/Linux:
+    * Smart Swap & Swap Above/Below: Shift+Ctrl+Up/Down
+    * Separate Text Up: Shift+Ctrl+Alt+Up
+    * Separate Text Down: Shift+Ctrl+Alt+Down
+    * Attract Text: Shift+Ctrl+Alt+Left
+    * Repel Text: Shift+Ctrl+Alt+Right
 
-  For Mac OS X:
-    * Jump to definition = ``Control+Click``
-    * Jump to definition = ``Control+Command+Alt+Up``
-    * Go back = ``Control+Command+Alt+Left``
-    * Manual CodeIntel = ``Control+Shift+space``
+  For macOS:
+    * Smart Swap & Swap Above/Below: Ctrl+Cmd+Up/Down
+    * Separate Text Up: Ctrl+Alt+Cmd+Up
+    * Separate Text Down: Ctrl+Alt+Cmd+Down
+    * Attract Text: Ctrl+Alt+Cmd+Left
+    * Repel Text: Ctrl+Alt+Cmd+Right
