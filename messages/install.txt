@@ -30,3 +30,5 @@ Comes with the following features:
     * Separate Text Down: Ctrl+Alt+Cmd+Down
     * Attract Text: Ctrl+Alt+Cmd+Left
     * Repel Text: Ctrl+Alt+Cmd+Right
+
+For detailed documentation see: https://github.com/trych/SmarterLineMoves

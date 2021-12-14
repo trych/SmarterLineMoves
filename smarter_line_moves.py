@@ -18,6 +18,8 @@ class SmartSwapLineUpCommand(sublime_plugin.TextCommand):
   def run(self, edit):
     self.view.run_command('swap_line_up')
     clear_top(self.view)
+    if slm_settings.get('auto_reindent'):
+      self.view.run_command('reindent')
 
 
 class SmartSwapLineDownCommand(sublime_plugin.TextCommand):
@@ -28,6 +30,8 @@ class SmartSwapLineDownCommand(sublime_plugin.TextCommand):
   def run(self, edit):
     self.view.run_command('swap_line_down')
     clear_bottom(self.view)
+    if slm_settings.get('auto_reindent'):
+      self.view.run_command('reindent')
 
 
 class SwapLineAboveCommand(sublime_plugin.TextCommand):

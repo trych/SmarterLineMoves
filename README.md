@@ -85,10 +85,6 @@ Allows the text to move "below" the text buffer once the moving text reaches the
 
 If the selected text has been moved down "below" the text buffer too far, it can be moved back by using the `Swap Line Up` key binding. If this setting is set to true, the empty lines that have been previously added, will be automatically removed again.
 
-#### `squash_whitespace_only_lines`: true/false (Default: true)
-
-If using the `Attract Text` command and this is set to true, lines that have only white space in them will be erased as well, as if they were empty lines. When this is set to false, those lines will be kept, just like regular lines with text content.
-
 #### `move_up_clearance`: Number (Default: 5)
 
 How many lines to keep visible between the moving text and the window top when using the package's text moving commands.
@@ -96,6 +92,14 @@ How many lines to keep visible between the moving text and the window top when u
 #### `move_down_clearance`: Number (Default: 5)
 
 How many lines to keep visible between the moving text and the window bottom when using the package's text moving commands.
+
+#### `auto_reindent`: true/false (Default: false)
+
+Will automatically reindent the selected text after smart swapping.
+
+#### `squash_whitespace_only_lines`: true/false (Default: true)
+
+If using the `Attract Text` command and this is set to true, lines that have only white space in them will be erased as well, as if they were empty lines. When this is set to false, those lines will be kept, just like regular lines with text content.
 
 ### Keyboard Shortcuts
 

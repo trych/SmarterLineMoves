@@ -1,0 +1,6 @@
+Version 1.1.0 (2021-12-14)
+--------------------------
+
+  * Adds auto re-indent option to automatically re-indent text after
+    smart swapping (turned off by default, turn on in
+    Preferences -> Package Settings -> SmarterLineMoves -> Settings)

@@ -31,13 +31,16 @@
   "swap_below": true,
   "undo_swap_below": true,
 
-  // Allows lines that contain only whitespace to be deleted while using
-  // the "Attract Text" command.
-  "squash_whitespace_only_lines": true,
-
   // How many lines to keep visible when moving lines up.
   "move_up_clearance": 5,
 
   // How many lines to keep visible when moving lines down.
   "move_down_clearance": 5,
+
+  // Automatically re-indents text after moving
+  "auto_reindent": false,
+
+  // Allows lines that contain only whitespace to be deleted while using
+  // the "Attract Text" command.
+  "squash_whitespace_only_lines": true,
 }
