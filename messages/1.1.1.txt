@@ -1,0 +1,4 @@
+Version 1.1.1 (2021-01-02)
+--------------------------
+
+  * Fix: Distance between moving text and the window top is now also correctly inserted on un-doing a text move below the text buffer.

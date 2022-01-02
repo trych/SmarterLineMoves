@@ -75,10 +75,14 @@ class UnswapLineBelowCommand(sublime_plugin.TextCommand):
   and deleting the previously added empty lines.
   """
   def run(self, edit):
-    self.view.run_command('swap_line_up')
+    view = self.view
 
-    if self.view.line(self.view.size()).empty():
-      self.view.erase(edit, sublime.Region(len(self.view) - 1, len(self.view)))
+    view.run_command('swap_line_up')
+    clear_top(view)
+
+    if view.line(view.size()).empty():
+      view.erase(edit, sublime.Region(len(view) - 1, len(view)))
+
 
 
 class SeparateTextUp(sublime_plugin.TextCommand):
