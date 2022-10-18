@@ -1,4 +1,4 @@
 Version 1.1.2 (2022-10-18)
 --------------------------
 
-  * Fix: MacOS Key Bindings were not applied on MacOS
+  * Fix: Replace default platform agnostic keymap by platform specific keymaps for Windows and Linux to avoid multiple keyboard shortcuts on macOS.
