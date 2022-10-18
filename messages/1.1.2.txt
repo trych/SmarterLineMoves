@@ -1,0 +1,4 @@
+Version 1.1.2 (2022-10-18)
+--------------------------
+
+  * Fix: MacOS Key Bindings were not applied on MacOS
